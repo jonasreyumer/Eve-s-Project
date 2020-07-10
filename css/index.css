@@ -4,7 +4,8 @@ body {
 
 .container {
   height: 100%;
-  position: relative; }
+  position: relative;
+  padding: 0; }
 
 a:hover {
   color: white; }
@@ -45,9 +46,8 @@ a:hover {
   margin-top: 13px; }
 
 .logo {
-  position: relative; }
-  .logo img {
-    height: 150px; }
+  position: relative;
+  background-color: #f8e9c8; }
 
 .hero {
   position: relative;
@@ -69,7 +69,8 @@ a:hover {
     width: 400px;
     margin-top: 20px;
     padding: 25px;
-    font-size: 30px; }
+    font-size: 30px;
+    font-family: 'Bentham', serif; }
 
 .text-focus-in {
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.5s both; }
@@ -96,28 +97,29 @@ a:hover {
   /* VIA CSS MATIC https://goo.gl/cIbnS */
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff; }
 
 .product-img {
   float: left;
-  height: 420px; }
-  .product-img img {
-    border-radius: 7px;
-    height: 420px;
-    width: 370px; }
+  height: 420px;
+  background-image: url("imgs/almendras.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 7px 0px 0px 7px; }
 
 .product-info {
   float: left;
-  height: 420px;
+  height: 280px;
   border-radius: 0 7px 10px 7px;
   background-color: #ffffff; }
 
 .product-text {
-  height: 400px; }
+  height: 280px; }
   .product-text h1 {
     margin: 0 0 5px 38px;
     padding-top: 15px;
-    font-size: 34px;
+    font-size: 50px;
     color: #474747;
     font-family: 'Bentham', serif; }
   .product-text h2 {
@@ -126,23 +128,14 @@ a:hover {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    color: #d2d2d2;
-    letter-spacing: 0.2em; }
-  .product-text p {
-    height: 125px;
-    margin: 0 0 0 38px;
-    font-family: 'Playfair Display', serif;
     color: #8d8d8d;
-    line-height: 1.7em;
-    font-size: 15px;
-    font-weight: lighter;
-    overflow: hidden; }
+    letter-spacing: 0.2em; }
 
 .product-price p {
   padding-top: 50px;
   height: 50px;
   font-family: 'Trocchi', serif;
-  margin: 0 0 0 38px;
+  margin: 0;
   font-size: 28px;
   font-weight: lighter;
   color: #474747; }
@@ -150,3 +143,17 @@ a:hover {
     height: 50px;
     font-family: 'Suranna', serif;
     font-size: 34px; }
+
+.product-detail {
+  height: 400px;
+  background-color: #ffffff;
+  padding-top: 20px; }
+  .product-detail p {
+    height: 125px;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: #8d8d8d;
+    line-height: 1.7em;
+    font-size: 15px;
+    font-weight: lighter;
+    overflow: hidden; }
