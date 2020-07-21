@@ -1,5 +1,8 @@
 $color1: #33525c;
 $color2: #f8e9c8;
+$texto: 'Open Sans', sans-serif;
+$propiedades: 'Raleway', sans-serif;
+$titulos: 'Sanchez', serif;
 
 body {
     margin: 0;
@@ -11,7 +14,9 @@ body {
     position: relative;
     padding: 0;
 }
-
+.row {
+  margin: 0;
+}
 a:hover {
   color: white;
 }
@@ -84,7 +89,7 @@ a:hover {
         margin-top: 20px;
         padding: 25px;
         font-size: 30px;
-        font-family: 'Bentham', serif;
+        font-family: $titulos;
         animation-name: opacity;
         animation-duration: 4s;
         p {
@@ -116,7 +121,10 @@ a:hover {
 .break {
   background-color: #ffffff;
   // width: 100%;
+  display: flex;
+  justify-content: center;
   .icons {
+    width: auto;
     img {
       // height: 100px;
       width: 100px;
@@ -157,13 +165,14 @@ a:hover {
     padding-top: 15px;
     font-size: 50px;
     color: #474747;
-    font-family: 'Bentham', serif;
+    font-family: $titulos;
     text-align: center;
+    // text-transform: uppercase;
   }
   h2 {
     margin: 15px 0 15px 38px;
     font-size: 13px;
-    font-family: 'Raleway', sans-serif;
+    font-family: $propiedades;
     font-weight: 400;
     text-transform: uppercase;
     color: #8d8d8d;
@@ -196,7 +205,7 @@ a:hover {
   p {
     // height: 125px;
     margin: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: $texto;
     color: #8d8d8d;
     line-height: 1.7em;
     font-size: 16px;
@@ -207,6 +216,9 @@ a:hover {
 }
 
 @media (max-width: 480px){
+  .hero {
+    padding-top: 28px;
+  }
   .product-detail {
     padding-top: 5px;
   }
@@ -218,13 +230,9 @@ a:hover {
   .product-img {
     border-radius: 0 0 0 0;
   }
-  // .break .background{
-  //   width: 375px;
-  // }
   .text1 {
     p {
-      padding-top: 80px;
-      width: 375px;
+      font-size: 70%;
     }
   }
 }
