@@ -69,10 +69,10 @@ a:hover {
 }
 .hero { 
     position: relative;
-    height: 500px;
+    min-height: 600px;
     .background { 
         z-index: 0;
-        background-image: url("imgs/back2.jpg");
+        background-image: url("imgs/back1.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -93,7 +93,7 @@ a:hover {
         animation-name: opacity;
         animation-duration: 4s;
         p {
-          padding-top: 250px;
+          padding-top: 350px;
         }
     }
 }
@@ -118,35 +118,40 @@ a:hover {
       opacity: 1;
     }
   }
-.text2 {
-  position: relative;
-  color: $color1;
-  width: 800px;
-  margin-top: 20px;
-  padding: 25px;
-  font-size: 30px;
-  font-family: $titulos;
-  p {
-    text-align: center;
-  }
-}
-.backcolor {
-  background-color: #b6d2e0;
-}
 .break {
-  // background-color: #ffffff;
-  // width: 100%;
+  background-color: #b6d2e0;
   display: flex;
   justify-content: center;
-  .icons {
-    width: auto;
-    img {
-      // height: 100px;
-      width: 100px;
-      padding: 10px;
-      margin-top: 25px;
+  flex-direction: column;
+  .text2 {
+    position: relative;
+    color: $color1;
+    // width: 800px;
+    margin-top: 20px;
+    padding: 25px;
+    font-size: 30px;
+    font-family: $titulos;
+    p {
+      text-align: center;
     }
   }
+  ul {
+    list-style: none;
+    display: inline-block;
+    list-style-type: none;
+  }
+  li {
+    list-style: none;
+  }
+  .icons {
+  width: auto;
+  img {
+    // height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin-top: 25px;
+  }
+}
 }
 .wrapper {
   position: relative;
@@ -162,10 +167,29 @@ a:hover {
 .product-img {
   float: left;
   height: 420px;
-  background-image: url("imgs/almendras.jpg");
   background-size: cover;
-  background-position: center;
+  // background-position: center;
   border-radius: 7px 0px 0px 7px;
+}
+#almendra {
+  background-image: url("imgs/almendras2.jpg");
+  background-position: center;
+}
+#caju {
+  background-image: url("imgs/caju4.jpg");
+}
+#sesamo {
+  background-image: url("imgs/almendras.jpg");
+}
+#mani {
+  background-image: url("imgs/mani.jpg");
+  background-position: center;
+}
+#miel {
+  background-image: url("imgs/miel.jpeg");
+}
+#granola {
+  background-image: url("imgs/almendras.jpg");
 }
 .product-info {
   float: left;
