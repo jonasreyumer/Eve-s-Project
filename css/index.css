@@ -106,7 +106,8 @@ a:hover {
   background-color: #b6d2e0;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-bottom: 10px; }
   .break .text2 {
     position: relative;
     color: #33525c;
@@ -116,18 +117,6 @@ a:hover {
     font-family: "Sanchez", serif; }
     .break .text2 p {
       text-align: center; }
-  .break ul {
-    list-style: none;
-    display: inline-block;
-    list-style-type: none; }
-  .break li {
-    list-style: none; }
-  .break .icons {
-    width: auto; }
-    .break .icons img {
-      width: 100px;
-      padding: 10px;
-      margin-top: 25px; }
 
 .wrapper {
   position: relative;
@@ -161,7 +150,7 @@ a:hover {
   background-position: center; }
 
 #miel {
-  background-image: url("imgs/miel.jpeg"); }
+  background-image: url("imgs/miel.jpg"); }
 
 #granola {
   background-image: url("imgs/almendras.jpg"); }
