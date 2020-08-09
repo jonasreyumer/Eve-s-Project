@@ -105,10 +105,11 @@ a:hover {
   min-height: 200px;
   background-color: #ffffff;
   align-items: center; }
-  .break .icons {
+  .break .icon {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+    margin: 0 10px;
     max-width: 100px;
     color: #33525c; }
   .break img {
@@ -117,7 +118,8 @@ a:hover {
     width: 70px; }
   .break p {
     display: inline-block;
-    text-align: center; }
+    text-align: center;
+    min-height: 50px; }
 
 .titulo {
   position: relative;

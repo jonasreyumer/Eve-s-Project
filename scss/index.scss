@@ -125,11 +125,12 @@ a:hover {
   // margin: 25px auto;
   background-color: #ffffff;
   align-items: center;
-  .icons {
+  .icon {
     // height: 100px;
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+    margin: 0 10px;
     // border-radius: 70px;
     // background-color: $color1;
     max-width: 100px;
@@ -137,12 +138,14 @@ a:hover {
   }
   img {
     position: relative;
-    height: 70px;
-    width: 70px;
+    $size: 70px;
+    height: $size;
+    width: $size;
   }
   p {
     display: inline-block;
     text-align: center;
+    min-height: 50px;
   }
 }
 .titulo {
