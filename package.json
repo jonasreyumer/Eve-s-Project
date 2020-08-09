@@ -1,0 +1,25 @@
+{
+  "name": "eve-s-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass -r scss -o css",
+    "watch": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonasreyumer/Eve-s-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonasreyumer/Eve-s-Project/issues"
+  },
+  "homepage": "https://github.com/jonasreyumer/Eve-s-Project#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  }
+}

@@ -264,6 +264,12 @@ footer {
   // background-image: url("imgs/Logo-08.png");
   background-color: $color1;
   height: 300px;
+  .info {
+    p {
+      font-family: $texto;
+      color: white;
+    }
+  }
 }
 
 

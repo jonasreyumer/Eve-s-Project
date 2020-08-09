@@ -224,6 +224,9 @@ a:hover {
 footer {
   background-color: #33525c;
   height: 300px; }
+  footer .info p {
+    font-family: "Open Sans", sans-serif;
+    color: white; }
 
 @media (max-width: 480px) {
   .hero {
