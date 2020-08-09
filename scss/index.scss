@@ -6,7 +6,7 @@ $titulos: 'Sanchez', serif;
 
 body {
     margin: 0;
-    background-color: #ffffff96;
+    // background-color: #ffffff96;
     // background-image: url("imgs/logo-08.png");
 }
 .container {
@@ -70,6 +70,9 @@ a:hover {
 .hero { 
     position: relative;
     min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .background { 
         z-index: 0;
         background-image: url("imgs/back1.jpg");
@@ -84,29 +87,25 @@ a:hover {
     }
     .text1 {
         position: relative;
-        color: $color1;
-        width: 400px;
-        margin-top: 20px;
+        // margin-top: 150px;
         padding: 25px;
-        font-size: 30px;
         font-family: $titulos;
-        animation-name: opacity;
-        animation-duration: 4s;
+        h1 {
+          text-align: center;
+          background-color: $color1;
+          color: $color2;
+          margin-bottom: 20px;
+        }
         p {
-          padding-top: 350px;
+          font-size: 20px;
+          text-align: center;
+          background-color: white;
+          color: $color1;
         }
     }
 }
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .text-focus-in {
-    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+    animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
 }
 @keyframes text-focus-in {
     0% {
@@ -119,27 +118,48 @@ a:hover {
     }
   }
 .break {
-  background-color: #b6d2e0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-bottom: 10px;
-  .text2 {
-    position: relative;
+  // background-color: $color1;
+  // height: 300px;
+  position: relative;
+  min-height: 200px;
+  // margin: 25px auto;
+  background-color: #ffffff;
+  align-items: center;
+  .icons {
+    // height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    // border-radius: 70px;
+    // background-color: $color1;
+    max-width: 100px;
     color: $color1;
-    // width: 800px;
-    margin-top: 20px;
-    padding: 25px;
-    font-size: 30px;
-    font-family: $titulos;
-    p {
-      text-align: center;
-    }
+  }
+  img {
+    position: relative;
+    height: 70px;
+    width: 70px;
+  }
+  p {
+    display: inline-block;
+    text-align: center;
+  }
+}
+.titulo {
+  position: relative;
+  padding: 25px;
+  font-family: $titulos;
+  background-color: $color1;
+  h1 {
+    text-align: center;
+    background-color: $color1;
+    color: $color2;
+    margin-bottom: 20px;
   }
 }
 .wrapper {
   position: relative;
-  height: 420px;
+  min-height: 420px;
   margin: 25px auto;
   border-radius: 7px 7px 7px 7px;
   /* VIA CSS MATIC https://goo.gl/cIbnS */
@@ -150,7 +170,7 @@ a:hover {
 }
 .product-img {
   float: left;
-  height: 420px;
+  min-height: 420px;
   background-size: cover;
   // background-position: center;
   border-radius: 7px 0px 0px 7px;
@@ -227,6 +247,7 @@ a:hover {
   padding-top: 20px;
   position: relative;
   text-align: justify;
+  align-items: center;
   p {
     // height: 125px;
     margin: 0;
@@ -239,6 +260,12 @@ a:hover {
     margin-bottom: 10px;
   }  
 }
+footer {
+  // background-image: url("imgs/Logo-08.png");
+  background-color: $color1;
+  height: 300px;
+}
+
 
 @media (max-width: 480px){
   .hero {

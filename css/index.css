@@ -1,6 +1,5 @@
 body {
-  margin: 0;
-  background-color: #ffffff96; }
+  margin: 0; }
 
 .container {
   height: 100%;
@@ -60,7 +59,10 @@ a:hover {
 
 .hero {
   position: relative;
-  min-height: 600px; }
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .hero .background {
     z-index: 0;
     background-image: url("imgs/back1.jpg");
@@ -74,25 +76,21 @@ a:hover {
     right: 0; }
   .hero .text1 {
     position: relative;
-    color: #33525c;
-    width: 400px;
-    margin-top: 20px;
     padding: 25px;
-    font-size: 30px;
-    font-family: "Sanchez", serif;
-    animation-name: opacity;
-    animation-duration: 4s; }
+    font-family: "Sanchez", serif; }
+    .hero .text1 h1 {
+      text-align: center;
+      background-color: #33525c;
+      color: #f8e9c8;
+      margin-bottom: 20px; }
     .hero .text1 p {
-      padding-top: 350px; }
-
-@keyframes opacity {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+      font-size: 20px;
+      text-align: center;
+      background-color: white;
+      color: #33525c; }
 
 .text-focus-in {
-  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.5s both; }
+  animation: text-focus-in 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.5s both; }
 
 @keyframes text-focus-in {
   0% {
@@ -103,24 +101,38 @@ a:hover {
     opacity: 1; } }
 
 .break {
-  background-color: #b6d2e0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-bottom: 10px; }
-  .break .text2 {
+  position: relative;
+  min-height: 200px;
+  background-color: #ffffff;
+  align-items: center; }
+  .break .icons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    max-width: 100px;
+    color: #33525c; }
+  .break img {
     position: relative;
-    color: #33525c;
-    margin-top: 20px;
-    padding: 25px;
-    font-size: 30px;
-    font-family: "Sanchez", serif; }
-    .break .text2 p {
-      text-align: center; }
+    height: 70px;
+    width: 70px; }
+  .break p {
+    display: inline-block;
+    text-align: center; }
+
+.titulo {
+  position: relative;
+  padding: 25px;
+  font-family: "Sanchez", serif;
+  background-color: #33525c; }
+  .titulo h1 {
+    text-align: center;
+    background-color: #33525c;
+    color: #f8e9c8;
+    margin-bottom: 20px; }
 
 .wrapper {
   position: relative;
-  height: 420px;
+  min-height: 420px;
   margin: 25px auto;
   border-radius: 7px 7px 7px 7px;
   /* VIA CSS MATIC https://goo.gl/cIbnS */
@@ -131,7 +143,7 @@ a:hover {
 
 .product-img {
   float: left;
-  height: 420px;
+  min-height: 420px;
   background-size: cover;
   border-radius: 7px 0px 0px 7px; }
 
@@ -198,7 +210,8 @@ a:hover {
   background-color: #ffffff;
   padding-top: 20px;
   position: relative;
-  text-align: justify; }
+  text-align: justify;
+  align-items: center; }
   .product-detail p {
     margin: 0;
     font-family: "Open Sans", sans-serif;
@@ -207,6 +220,10 @@ a:hover {
     font-size: 16px;
     overflow: hidden;
     margin-bottom: 10px; }
+
+footer {
+  background-color: #33525c;
+  height: 300px; }
 
 @media (max-width: 480px) {
   .hero {
