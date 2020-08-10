@@ -129,8 +129,7 @@ a:hover {
   .titulo h1 {
     text-align: center;
     background-color: #33525c;
-    color: #f8e9c8;
-    margin-bottom: 20px; }
+    color: #f8e9c8; }
 
 .wrapper {
   position: relative;
@@ -157,7 +156,8 @@ a:hover {
   background-image: url("imgs/caju4.jpg"); }
 
 #sesamo {
-  background-image: url("imgs/almendras.jpg"); }
+  background-image: url("imgs/sesamo.jpg");
+  background-position: bottom; }
 
 #mani {
   background-image: url("imgs/mani.jpg");
@@ -167,7 +167,8 @@ a:hover {
   background-image: url("imgs/Miel.jpg"); }
 
 #granola {
-  background-image: url("imgs/almendras.jpg"); }
+  background-image: url("imgs/granola.jpg");
+  background-position: center; }
 
 .product-info {
   float: left;
@@ -225,10 +226,21 @@ a:hover {
 
 footer {
   background-color: #33525c;
-  height: 300px; }
-  footer .info p {
+  min-height: 250px;
+  align-items: center; }
+  footer .info ul {
     font-family: "Open Sans", sans-serif;
-    color: white; }
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+    padding: 0; }
+    footer .info ul li {
+      font-family: "Sanchez", serif;
+      font-weight: lighter;
+      padding: 10px; }
+    footer .info ul span {
+      font-family: "Raleway", sans-serif; }
 
 @media (max-width: 480px) {
   .hero {

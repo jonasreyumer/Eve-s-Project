@@ -15,7 +15,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Sanchez&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" type="image/ico" href="imgs/logo.ico">
+    <link rel="shortcut icon" type="image/ico" href="imgs/logo.ico">
+    <script>
+    document.onscroll = function() {
+        if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+            document.getElementById('hide1').style.display='none';
+            document.getElementById('hide2').style.display='none';
+        }
+        else if (window.innerHeight + window.scrollY < document.body.clientHeight) {
+            document.getElementById('hide1').style.display='block';
+            document.getElementById('hide2').style.display='block';
+        }      
+    }
+    </script>
 </head>
 
 <body>
@@ -23,8 +35,8 @@
 
         <!-- Whatsapp - Instagram icons -->
 
-        <a href="https://api.whatsapp.com/send?phone=5491168619445&text=Hola!%20Envianos%20tu%20consulta%20o%20pedido" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>        
-        <a href="https://www.instagram.com/konoha.milk/?hl=es" class="instagram" target="_blank"> <i class="fa fa-instagram instagram-icon"></i></a>        
+        <a href="https://api.whatsapp.com/send?phone=5491168619445&text=Hola!%20Envianos%20tu%20consulta%20o%20pedido" class="whatsapp" target="_blank" id="hide1"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>        
+        <a href="https://www.instagram.com/konoha.milk/?hl=es" class="instagram" target="_blank" id="hide2"> <i class="fa fa-instagram instagram-icon"></i></a>        
         <div class="row justify-content-center top">
             <div class="logo">
                 <img src="imgs/Logo2.png">
@@ -37,7 +49,7 @@
             <div class="background"></div> 
             <div class="text1 text-focus-in">
                 <h1>QUIENES SOMOS</h1>
-                <p>“Realizamos productos naturales, orgánicos y saludables. Somos un espacio que respeta nuestro planeta y quienes lo habitan por lo que utilizamos packaging reutilizables. Alimentos que nutren tu cuerpo, mente y alma.-”.</p>
+                <p>“Elaboramos productos naturales, orgánicos y saludables que nutren tu cuerpo, mente y alma. Somos un espacio que respeta nuestro planeta y quienes lo habitan, es por esto que todos nuestros packagings son reutilizables y biodegradables.-”</p>
             </div>           
         </div>
 
@@ -52,8 +64,8 @@
             <p>Packaging Amigable</p>
         </div>
         <div class="icon align-items-center">
-            <img src="imgs/seedling-solid.svg">
-            <p>Ecologico</p>
+            <img src="imgs/saludable.png">
+            <p>Saludable</p>
         </div>
     </div>
     <div class="row justify-content-center">
@@ -100,7 +112,30 @@
             <div class="product-detail col-sm">
                 <div class="product-text">
                     <p>Son un gran aperitivo o ingrediente para aquellos que quieren algo rico sin la culpa. Estas semillas se encuentran en el extremo del árbol de anacardo, que es una delicia sudamericana rica en nutrientes. </p>
-                    <p>Una onza de castañas tiene cinco gramos de proteínas, así como altos niveles de minerales esenciales como hierro, magnesio, fósforo, zinc, cobre y manganeso. También son ricas en triptófano, que se convierte en serotonina.</p>
+                    <p>100 gramos de castañas contienen 17 gramos de proteínas, así como altos niveles de minerales esenciales como hierro, magnesio, fósforo, zinc, cobre y manganeso. También son ricas en triptófano, que se convierte en serotonina.</p>
+                </div>
+                <!-- <div class="product-price">
+                    <p>$<span>250</span></p>
+                </div> -->
+            </div>
+        </div>   
+        
+        <div class="row wrapper">
+            <div class="product-img col-sm" id="mani">
+            </div>
+            <div class="product-info col-sm">
+                <div class="product-text">
+                    <h1>Mantequilla de Maní</h1>
+                    <h2>Poderoso antioxidante</h2>
+                    <h2>Altamente proteico</h2>
+                    <h2>Super aliada FIT</h2>
+                    <h2>Contiene hierro, que ayuda a prevenir anemia</h2>                   
+                </div>
+            </div>
+            <div class="product-detail col-sm">
+                <div class="product-text">
+                    <p>Los altos niveles de proteína que posee el maní ayuda a mantener a la persona saciada por mucho más tiempo, perfecta para los desayunos y después de entrenar. No contiene colesterol, siendo más saludable para el corazón.</p>
+                    <p>En el desayuno, la mantequilla de maní va con todo, desde simples tostadas de pan o de arroz, hasta con frutos rojos, granola o simplemente, untada a una banana. En los smoothies y licuados aporta una textura cremosa. Ideal para preparar hummus y acompañar en sandwiches vegetarianos con berenjenas y palta.</p>
                 </div>
                 <!-- <div class="product-price">
                     <p>$<span>250</span></p>
@@ -124,29 +159,6 @@
                 <div class="product-text">
                     <p>Un alimento de gran calidad, es un excelente complemento nutritivo para personas sometidas a gran actividad mental o intelectual. También ayuda a soportar exigencias físicas: prácticas deportivas, embarazo, lactancia o períodos de convalecencia</p>
                     <p>Puede ser utilizada con café y cacao, y funciona como un ingrediente perfecto en la preparación de salsas como la bechamel o de postres como el arroz con leche. También acompaña muy bien a la avena cocida para preparar un delicioso y nutritivo desayuno.</p>
-                </div>
-                <!-- <div class="product-price">
-                    <p>$<span>250</span></p>
-                </div> -->
-            </div>
-        </div>
-        
-        <div class="row wrapper">
-            <div class="product-img col-sm" id="mani">
-            </div>
-            <div class="product-info col-sm">
-                <div class="product-text">
-                    <h1>Mantequilla de Maní</h1>
-                    <h2>Poderoso antioxidante</h2>
-                    <h2>Altamente proteico</h2>
-                    <h2>Supier aliada FIT</h2>
-                    <h2>Contiene hierro, que ayuda a prevenir anemia</h2>                   
-                </div>
-            </div>
-            <div class="product-detail col-sm">
-                <div class="product-text">
-                    <p>Los altos niveles de proteína que posee el maní ayuda a mantener a la persona saciada por mucho más tiempo, perfecta para los desayunos y después de entrenar. No contiene colesterol, siendo más saludable para el corazón.</p>
-                    <p>En el desayuno, la mantequilla de maní va con todo, desde simples tostadas de pan o de arroz, hasta con frutos rojos, granola o simplemente, untada a una banana. En los smoothies y licuados aporta una textura cremosa. Ideal para preparar hummus y acompañar en sandwiches vegetarianos con berenjenas y palta.</p>
                 </div>
                 <!-- <div class="product-price">
                     <p>$<span>250</span></p>
@@ -202,9 +214,13 @@
 
     <!-- Container end     -->
     </div>
-<footer>
+<footer class="row justify-content-center">
     <div class="info">
-        <p></p>
+        <ul>
+            <li>Por única vez se cobrará <span>$60</span> una botella retornable. Eso sí, <span>NO TE OLVIDES DE ENTREGARLOS</span> en tu próximo entrega.</li>
+            <li>Las entregas se harán los días sábados por motivos de cuarentena.</li>
+            <li>Zonas de entrega: Morón, Haedo, Ramos Mejía, Villa Luzuriaga, San Justo, Liniers.</li>
+        </ul>
     </div>
 </footer> 
 </body>

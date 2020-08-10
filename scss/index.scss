@@ -157,7 +157,6 @@ a:hover {
     text-align: center;
     background-color: $color1;
     color: $color2;
-    margin-bottom: 20px;
   }
 }
 .wrapper {
@@ -186,7 +185,8 @@ a:hover {
   background-image: url("imgs/caju4.jpg");
 }
 #sesamo {
-  background-image: url("imgs/almendras.jpg");
+  background-image: url("imgs/sesamo.jpg");
+  background-position: bottom;
 }
 #mani {
   background-image: url("imgs/mani.jpg");
@@ -196,7 +196,8 @@ a:hover {
   background-image: url("imgs/Miel.jpg");
 }
 #granola {
-  background-image: url("imgs/almendras.jpg");
+  background-image: url("imgs/granola.jpg");
+  background-position: center;
 }
 .product-info {
   float: left;
@@ -266,11 +267,24 @@ a:hover {
 footer {
   // background-image: url("imgs/Logo-08.png");
   background-color: $color1;
-  height: 300px;
+  min-height: 250px;
+  align-items: center;
   .info {
-    p {
+    ul {
       font-family: $texto;
       color: white;
+      font-size: 20px;
+      list-style: none;
+      text-align: center;
+      padding: 0;
+      li {
+        font-family: $titulos;
+        font-weight: lighter;
+        padding: 10px;
+      }
+      span {
+        font-family: $propiedades;
+      }
     }
   }
 }
@@ -306,4 +320,3 @@ footer {
     }
   }
 }
-
