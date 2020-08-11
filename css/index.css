@@ -168,7 +168,15 @@ a:hover {
 
 #granola {
   background-image: url("imgs/granola.jpg");
-  background-position: center; }
+  background-position: center;
+  opacity: 0.8;
+  align-items: center; }
+  #granola h1 {
+    font-family: "Sanchez", serif;
+    text-align: center;
+    background-color: #f8e9c8;
+    color: #33525c;
+    margin-top: 150px; }
 
 .product-info {
   float: left;
